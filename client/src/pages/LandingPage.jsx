@@ -45,9 +45,9 @@ export default function LandingPage() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 w-full max-w-3xl mx-auto px-4">
                         {isSignedIn ? (
-                            <Link to="/dashboard" className="w-full sm:w-auto block">
+                            <Link to="/dashboard" className="w-fit mx-auto sm:mx-0 block">
                                 <HoverBorderGradient
-                                    containerClassName="w-full sm:w-fit rounded-full shadow-xl mx-auto"
+                                    containerClassName="w-fit rounded-full shadow-xl"
                                     as="button"
                                     className="bg-white text-black font-semibold text-base px-8 py-4"
                                 >
@@ -55,11 +55,11 @@ export default function LandingPage() {
                                 </HoverBorderGradient>
                             </Link>
                         ) : (
-                            <div className="w-full sm:w-auto block">
+                            <div className="w-fit mx-auto sm:mx-0 block">
                                 <SignUpButton mode="modal">
-                                    <div className="w-full cursor-pointer">
+                                    <div className="w-fit cursor-pointer">
                                         <HoverBorderGradient
-                                            containerClassName="w-full sm:w-fit rounded-full shadow-xl mx-auto"
+                                            containerClassName="w-fit rounded-full shadow-xl"
                                             as="button"
                                             className="bg-white text-black font-semibold text-base px-8 py-4"
                                         >
@@ -72,9 +72,9 @@ export default function LandingPage() {
                         <a href="#how-it-works" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#how-it-works')?.scrollIntoView({ behavior: 'smooth' });
-                        }} className="w-full sm:w-auto block">
+                        }} className="w-fit mx-auto sm:mx-0 block">
                             <HoverBorderGradient
-                                containerClassName="w-full sm:w-fit rounded-full shadow-xl mx-auto"
+                                containerClassName="w-fit rounded-full shadow-xl"
                                 as="button"
                                 className="bg-white text-[#1E40AF] font-semibold text-base px-8 py-4"
                             >
