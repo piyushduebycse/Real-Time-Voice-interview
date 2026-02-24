@@ -183,14 +183,15 @@ export function useVapiInterview(navigate) {
                 vapiRef.current.stop();
             } catch (err) {
                 console.error('Error stopping Vapi call:', err);
-                // If stop() fails, manually trigger analysis if we had an active call
-                if (isActiveRef.current && !hasEndedRef.current) {
-                    hasEndedRef.current = true;
-                    isActiveRef.current = false;
-                    setIsSpeaking(false);
-                    runAnalysis();
-                }
             }
+        }
+
+        // Ensure analysis runs even if call-end event is swallowed by Vapi SDK stop()
+        if (isActiveRef.current && !hasEndedRef.current) {
+            hasEndedRef.current = true;
+            isActiveRef.current = false;
+            setIsSpeaking(false);
+            runAnalysis();
         }
     }, [runAnalysis]);
 
