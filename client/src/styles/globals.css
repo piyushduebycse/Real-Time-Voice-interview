@@ -1,0 +1,17 @@
+:root {
+  --bg-primary: #0f0f1a;        /* deep navy */
+  --bg-card: #1a1a2e;           /* card background */
+  --bg-elevated: #16213e;       /* elevated surfaces */
+  --accent-primary: #7c3aed;    /* violet - primary CTA */
+  --accent-warm: #f59e0b;       /* amber - highlights */
+  --accent-coral: #f97316;      /* coral - recording state */
+  --text-primary: #f1f5f9;      /* near white */
+  --text-muted: #94a3b8;        /* slate gray */
+  --success: #10b981;           /* green - strengths */
+  --warning: #f59e0b;           /* amber - improvements */
+  --error: #ef4444;             /* red - low scores */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
