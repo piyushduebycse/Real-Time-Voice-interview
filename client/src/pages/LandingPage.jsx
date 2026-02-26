@@ -34,9 +34,9 @@ export default function LandingPage() {
                 <main className="flex flex-col items-center justify-center w-full z-10 relative">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-light rounded-full blur-3xl -z-10 opacity-70"></div>
 
-                    <h1 className="text-5xl md:text-6xl font-display font-bold leading-tight mb-6 max-w-3xl">
+                    <h1 className="text-3xl sm:text-5xl md:text-6xl font-display font-bold leading-tight mb-6 max-w-3xl">
                         Practice out loud. <br />
-                        <Highlight className="text-white px-2 pb-2">Get coached in real time.</Highlight>
+                        <Highlight className="text-white px-2 pb-2 whitespace-nowrap">Get coached in real time.</Highlight>
                     </h1>
 
                     <p className="text-lg md:text-xl text-neutral-700 max-w-2xl mb-10">
